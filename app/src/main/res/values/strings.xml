@@ -1,4 +1,5 @@
 <resources>
-    <string name="app_name">SendMail</string>
+    <string name="app_name">Send Mail</string>
     <string name="compose_email">Compose Email</string>
+    <string name="open_mail">Open Mail Inbox</string>
 </resources>

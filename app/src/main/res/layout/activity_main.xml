@@ -10,40 +10,28 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.thieumao.sendmail.MainActivity"
-    android:background="@android:color/holo_orange_light">
-
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sending Mail Example"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:textSize="30dp" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tutorials point "
-        android:textColor="#ff87ff09"
-        android:textSize="30dp"
-        android:layout_above="@+id/imageButton"
-        android:layout_alignRight="@+id/imageButton"
-        android:layout_alignEnd="@+id/imageButton" />
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageButton"
-        android:src="@mipmap/ic_launcher"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+    android:background="@color/colorBackground">
 
     <Button
-        android:id="@+id/sendEmail"
-        android:layout_width="fill_parent"
+        android:id="@+id/composeEmail"
+        android:onClick="composeEmail"
+        android:background="@color/colorButton"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="@color/colorTextButton"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/button_vertical_margin"
+        android:layout_marginBottom="@dimen/button_vertical_margin"
         android:text="@string/compose_email"/>
+
+    <Button
+        android:id="@+id/openMail"
+        android:onClick="openMail"
+        android:background="@color/colorButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorTextButton"
+        android:textStyle="bold"
+        android:text="@string/open_mail"/>
 
 </LinearLayout>
